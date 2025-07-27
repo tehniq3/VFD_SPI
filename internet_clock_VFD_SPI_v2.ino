@@ -13,6 +13,7 @@
  * v.1 - initial version for NTP clock
  * v.1a - added date as scroll text, datee requested as at https://randomnerdtutorials.com/esp8266-nodemcu-date-time-ntp-client-server-arduino/
  * v.2 - clock scroll as date (intro and the end) + moved RESET od display to D1 (not RST)
+ * v.2a - real update the seconds as real time
  */
 
    #include <NTPClient.h>
@@ -315,6 +316,7 @@ void setup() {
   Serial.println(currentDate);
 
    ss = timeClient.getSeconds ();  // updte second before loop
+   targetTime = millis();  // time to be updated just if it need
 }
 
 void loop() {
