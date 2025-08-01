@@ -3,7 +3,9 @@ base info for Futaba 000FV959IN and BOE CIG14-0604B from:
 - https://mikroshop.ch//data/VFD_SPI.zip
 - https://github.com/slabua/micropython-futaba-vfd-driver
 
-Sumarry:
+All tests was optmized for 6-digit VDF SPI display. 
+
+Summary:
 - internet_clock_VFD_SPI_v1.ino  -> NTP simple clock (schematic version no. 1)
 - internet_clock_VFD_SPI_v1a.ino -> NTP clock with scrolling date (schematic version no. 1)
 - internet_clock_VFD_SPI_v2.ino  -> NTP scrolling clock and date (schematic version no. 2)
